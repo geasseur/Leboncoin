@@ -4,43 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <title>Index Shop</title>
+    <title>Index</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-toggleable-md navbar-light bg-warning text-white">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand text-white" href="#">Leboncoin</a>
+        <a class="navbar-brand text-white offset-5 hidden-lg-up" href="#"><strong>Leboncoin</strong></a>
+        <a class="navbar-brand text-white hidden-md-down" href="#"><strong>Leboncoin</strong></a>
 
         <div class="collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto align-items-center">
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">Accueil <span class="sr-only">(current)</span></a>
-            </li>
+            </a></li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Déposer une annonce</a>
-            </li>
+            </a></li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Offres</a>
-            </li>
+            </a></li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Demandes</a>
-            </li>
+            </a></li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Mes annonces</a>
-            </li>
+            </a></li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Boutique</a>
-            </li>
+            </a></li>
           </ul>
-          <button class="bg-warning" type="button" name="button">
+          <button class="bg-warning align-items-center" type="button" name="button">
             <img src="" alt="">
             <p>se connecter</p>
           </button>
@@ -49,15 +49,23 @@
     </header>
 
     <main class="container">
-      <section class="row">
-        <p class="text-muted">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
-        <button class="col-10 offset-1 bg-primary text-white">Deposer une Annonce</button>
-        <button class="col-10 offset-1 text-primary">Rechercher autour de soi</button>
-      </section>
+      <div class="row">
+        <section class="col-12 col-lg-4">
+          <p class="text-muted col-10 offset-1">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
+          <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce">Deposer une Annonce</button>
+          <button class="col-10 offset-1 text-primary mt-4 pt-2 pb-2" id="boutonRechercher">Rechercher autour de soi</button>
+        </section>
+
+        <section class="col-12 col-lg-5" id="carte">
+          <div class="width-50%">
+            <script src="cmap/france-map.js"></script>
+            <script>francefree();</script>
+          </div>
+        </section>
 
 
-        <section class="row">
-          <select class="hidden-lg-up col-10 offset-1" name="Choisissez votre région">
+        <section class="col-12 col-lg-3">
+          <select class="hidden-lg-up col-6 offset-3" name="Choisissez votre région">
             <option value="">Alsace</option>
             <option value="">Aquitaine</option>
             <option value="">Auvergne</option>
@@ -84,13 +92,162 @@
             <option value="">Martinique</option>
             <option value="">Guyane</option>
             <option value="">Réunion</option>
-          </select>
+        </select>
+
+          <ul class="hidden-md-down col-lg-2">
+          <li><a href=""><a href="">Alsace</a></li>
+          <li><a href="">Aquitaine</a></li>
+          <li><a href="">Auvergne</a></li>
+          <li><a href="">Basse-Normandie</a></li>
+          <li><a href="">Bourgogne</a></li>
+          <li><a href="">Bretagne</a></li>
+          <li><a href="">Centre</a></li>
+          <li><a href="">Champagne-Ardenne</a></li>
+          <li><a href="">Corse</a></li>
+          <li><a href="">Franche-Comté</a></li>
+          <li><a href="">Haute-Normandie</a></li>
+          <li><a href="">Ile-de-France</a></li>
+          <li><a href="">Languedoc-Roussillon</a></li>
+          <li><a href="">Limousin</a></li>
+          <li><a href="">Lorraine</a></li>
+          <li><a href="">Midi-Pyrénées</a></li>
+          <li><a href="">Nord-Pas-de-Calais</a></li>
+          <li><a href="">Pays de la Loire</a></li>
+          <li><a href="">Picardie</a></li>
+          <li><a href="">Poitou-Charentes</a></li>
+          <li><a href="">Provence-Alpes-Côte d'Azur</a></li>
+          <li><a href="">Rhône-Alpes</a></li>
+          <li><a href="">Guadeloupe</a></li>
+          <li><a href="">Martinique</a></li>
+          <li><a href="">Guyane</a></li>
+          <li><a href="">Réunion</a></li>
+        </ul>
         </section>
-        <article>
-          <h3></h3>
-          <img src="" alt="">
-        </article>
-    </main>
+      </div>
+
+
+    <article class="row col-12 hidden-lg-up" id="actualité">
+      <h5 class="col-12 hidden-lg-up">l'actualité Leboncoin</h5>
+      <img class="col-12" src="img/actualitéLeboncoin.png" alt="">
+    </article>
+
+    <section class="container hidden-md-down" id="bloclien">
+      <section class="row">
+        <section class="col-3">
+
+          <h5>Emploi</h5>
+          <ul>
+            <li><a href="#">offre d'emploi</a></li>
+          </ul>
+
+          <h5>Vehicule</h5>
+          <ul>
+            <li><a href="#">Voitures</a></li>
+            <li><a href="#">Motos</a></li>
+            <li><a href="#">Caravaning</a></li>
+            <li><a href="#">Utilitaires</a></li>
+            <li><a href="#">Equipement auto</a></li>
+            <li> <a href="#">Equipement motos</a></li>
+            <li><a href="#">Equipement caravaning</a></li>
+            <li><a href="#">Nautisme</a></li>
+            <li><a href="#">Equipement Nautisme</a></li>
+          </ul>
+
+          <h5>Immobilier</h5>
+          <ul>
+            <li><a href="#">vente immobilière</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Colocation</a></li>
+            <li><a href="#">Bureaux & commerce</a></li>
+          </ul>
+        </section>
+
+        <section class="col-3 col-md-down">
+          <h5>Vacances</h5>
+          <ul>
+            <li><a href="#">Location & gites</a></li>
+            <li><a href="#">Chambres d'hôtes</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Héberment insolites</a></li>
+          </ul>
+
+          <h5>Maison</h5>
+          <ul>
+            <li><a href="#">Ameublement</a></li>
+            <li><a href="#">Electronique</a></li>
+            <li><a href="#">Arts de la table</a></li>
+            <li><a href="#">Decoration</a></li>
+            <li><a href="#">Linge de maison</a></li>
+            <li><a href="#">Bricolage</a></li>
+            <li><a href="#">Jardinage</a></li>
+            <li><a href="#">Vêtements</a></li>
+            <li><a href="#">Chaussures</a></li>
+            <li><a href="#">Accessoires & bagagerie</a></li>
+            <li><a href="#">Montres et Bijoux</a></li>
+            <li><a href="#">Equipement bébé</a></li>
+            <li><a href="#">Vêtement bébé</a></li>
+          </ul>
+        </section>
+
+        <section class="col-3 col-md-down">
+          <h5>Multimédia</h5>
+          <ul>
+            <li><a href="#">Informatique</a></li>
+            <li><a href="#">Consoles & jeux vidéos</a></li>
+            <li><a href="#">Images & son</a></li>
+            <li><a href="#">Téléphonie</a></li>
+          </ul>
+
+          <h5>Loisirs</h5>
+          <li><a href="#">DVD/film</a></li>
+          <li><a href="#">CD/musique</a></li>
+          <li><a href="#">Livres</a></li>
+          <li><a href="#">Animaux</a></li>
+          <li><a href="#">Vélos</a></li>
+          <li><a href="#">Sport & hobbies</a></li>
+          <li><a href="#">Instrument de musique</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Jeux & jouets</a></li>
+          <li><a href="#">Vin & Gastronomie</a></li>
+        </section>
+
+        <section class="col-3 col-md-down">
+          <h5>Matériel Professionnel</h5>
+          <ul>
+            <li><a href="#">Matériel Agricole</a></li>
+            <li><a href="#">Transport-Manutention</a></li>
+            <li><a href="#">BTP-Chantier-Gros Oeuvre</a></li>
+            <li><a href="#">Outillage Matériaux 2nd oeuvres</a></li>
+            <li><a href="#">Equipement Industriels</a></li>
+            <li><a href="#">Restauration Hôtellerie</a></li>
+            <li><a href="#">Fourniture de Bureaux</a></li>
+            <li><a href="#">Commerce & Marché</a></li>
+            <li><a href="#">Matériel Médical</a></li>
+          </ul>
+
+          <h5>Service</h5>
+          <ul>
+            <li><a href="#">Prestation de service</a></li>
+            <li><a href="#">Billeterie</a></li>
+            <li><a href="#">Evénement</a></li>
+            <li><a href="#">Cours Particulier</a></li>
+            <li><a href="#">Covoiturage</a></li>
+          </ul>
+
+          <h5>Autres</h5>
+          <ul>
+            <li><a href="#">autres</a></li>
+          </ul>
+        </section>
+
+      </section>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 
 
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
