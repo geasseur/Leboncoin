@@ -17,37 +17,80 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Leboncoin</a>
+        <a class="navbar-brand text-white" href="#">Leboncoin</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto align-items-center">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Déposer une annonce</a>
+              <a class="nav-link text-white" href="#">Déposer une annonce</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Offres</a>
+              <a class="nav-link text-white" href="#">Offres</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Demandes</a>
+              <a class="nav-link text-white" href="#">Demandes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Mes annonces</a>
+              <a class="nav-link text-white" href="#">Mes annonces</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Boutique</a>
+              <a class="nav-link text-white" href="#">Boutique</a>
             </li>
-
-            <button type="button" name="button">
-              <img src="" alt="">
-              <p>se connecter</p>
-            </button>
           </ul>
+          <button class="bg-warning" type="button" name="button">
+            <img src="" alt="">
+            <p>se connecter</p>
+          </button>
         </div>
       </nav>
     </header>
+
+    <main class="container">
+      <section class="row">
+        <p class="text-muted">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
+        <button class="col-10 offset-1 bg-primary text-white">Deposer une Annonce</button>
+        <button class="col-10 offset-1 text-primary">Rechercher autour de soi</button>
+      </section>
+
+
+        <section class="row">
+          <select class="hidden-lg-up col-10 offset-1" name="Choisissez votre région">
+            <option value="">Alsace</option>
+            <option value="">Aquitaine</option>
+            <option value="">Auvergne</option>
+            <option value="">Basse-Normandie</option>
+            <option value="">Bourgogne</option>
+            <option value="">Bretagne</option>
+            <option value="">Centre</option>
+            <option value="">Champagne-Ardenne</option>
+            <option value="">Corse</option>
+            <option value="">Franche-Comté</option>
+            <option value="">Haute-Normandie</option>
+            <option value="">Ile-de-France</option>
+            <option value="">Languedoc-Roussillon</option>
+            <option value="">Limousin</option>
+            <option value="">Lorraine</option>
+            <option value="">Midi-Pyrénées</option>
+            <option value="">Nord-Pas-de-Calais</option>
+            <option value="">Pays de la Loire</option>
+            <option value="">Picardie</option>
+            <option value="">Poitou-Charentes</option>
+            <option value="">Provence-Alpes-Côte d'Azur</option>
+            <option value="">Rhône-Alpes</option>
+            <option value="">Guadeloupe</option>
+            <option value="">Martinique</option>
+            <option value="">Guyane</option>
+            <option value="">Réunion</option>
+          </select>
+        </section>
+        <article>
+          <h3></h3>
+          <img src="" alt="">
+        </article>
+    </main>
 
 
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
