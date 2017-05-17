@@ -51,9 +51,11 @@
     <main class="container">
       <div class="row">
         <section class="col-12 col-lg-4">
-          <p class="text-muted col-10 offset-1">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
-          <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce">Deposer une Annonce</button>
-          <button class="col-10 offset-1 text-primary mt-4 pt-2 pb-2" id="boutonRechercher">Rechercher autour de soi</button>
+          <div class="row">
+            <p class="text-muted col-10 offset-1">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
+            <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce">Deposer une Annonce</button>
+            <button class="col-10 offset-1 text-primary mt-4 pt-2 pb-2" id="boutonRechercher">Rechercher autour de soi</button>
+          </div>
         </section>
 
         <section class="col-12 col-lg-5" id="carte">
@@ -94,34 +96,34 @@
             <option value="">Réunion</option>
         </select>
 
-          <ul class="hidden-md-down col-lg-2">
-          <li><a href=""><a href="">Alsace</a></li>
-          <li><a href="">Aquitaine</a></li>
-          <li><a href="">Auvergne</a></li>
-          <li><a href="">Basse-Normandie</a></li>
-          <li><a href="">Bourgogne</a></li>
-          <li><a href="">Bretagne</a></li>
-          <li><a href="">Centre</a></li>
-          <li><a href="">Champagne-Ardenne</a></li>
-          <li><a href="">Corse</a></li>
-          <li><a href="">Franche-Comté</a></li>
-          <li><a href="">Haute-Normandie</a></li>
-          <li><a href="">Ile-de-France</a></li>
-          <li><a href="">Languedoc-Roussillon</a></li>
-          <li><a href="">Limousin</a></li>
-          <li><a href="">Lorraine</a></li>
-          <li><a href="">Midi-Pyrénées</a></li>
-          <li><a href="">Nord-Pas-de-Calais</a></li>
-          <li><a href="">Pays de la Loire</a></li>
-          <li><a href="">Picardie</a></li>
-          <li><a href="">Poitou-Charentes</a></li>
-          <li><a href="">Provence-Alpes-Côte d'Azur</a></li>
-          <li><a href="">Rhône-Alpes</a></li>
-          <li><a href="">Guadeloupe</a></li>
-          <li><a href="">Martinique</a></li>
-          <li><a href="">Guyane</a></li>
-          <li><a href="">Réunion</a></li>
-        </ul>
+          <ul class="hidden-md-downc">
+            <li><a href=""><a href="">Alsace</a></li>
+            <li><a href="">Aquitaine</a></li>
+            <li><a href="">Auvergne</a></li>
+            <li><a href="">Basse-Normandie</a></li>
+            <li><a href="">Bourgogne</a></li>
+            <li><a href="">Bretagne</a></li>
+            <li><a href="">Centre</a></li>
+            <li><a href="">Champagne-Ardenne</a></li>
+            <li><a href="">Corse</a></li>
+            <li><a href="">Franche-Comté</a></li>
+            <li><a href="">Haute-Normandie</a></li>
+            <li><a href="">Ile-de-France</a></li>
+            <li><a href="">Languedoc-Roussillon</a></li>
+            <li><a href="">Limousin</a></li>
+            <li><a href="">Lorraine</a></li>
+            <li><a href="">Midi-Pyrénées</a></li>
+            <li><a href="">Nord-Pas-de-Calais</a></li>
+            <li><a href="">Pays de la Loire</a></li>
+            <li><a href="">Picardie</a></li>
+            <li><a href="">Poitou-Charentes</a></li>
+            <li><a href="">Provence-Alpes-Côte d'Azur</a></li>
+            <li><a href="">Rhône-Alpes</a></li>
+            <li><a href="">Guadeloupe</a></li>
+            <li><a href="">Martinique</a></li>
+            <li><a href="">Guyane</a></li>
+            <li><a href="">Réunion</a></li>
+          </ul>
         </section>
       </div>
 
@@ -245,7 +247,70 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="container-fluid bg-inverse text-white">
+    <section class="row hidden-md-down">
+      <article class="col-3">
+        <h5>À propos du Boncoin</h5>
+        <ul>
+          <li><a href="#">Qui sommes nous?</a></li>
+          <li><a href="#">Nous Rejoindre</a></li>
+          <li><a href="#">Impact environnemental</a></li>
+        </ul>
+        <h5>Nos Applications</h5>
+          <img id="imageApp" src="img/appstore.png" alt="appstore">
+          <img id="imageApp" src="img/googleplay.png" alt="google play">
+
+      </article>
+
+      <article class="col-3">
+        <h5>Information Légales</h5>
+        <ul>
+          <li><a href="#">Conditions générales d'utilisations</a></li>
+          <li><a href="#">Règles de diffusions</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Vie privée et cookies</a></li>
+          <li><a href="#">Vos droits et obligations</a></li>
+        </ul>
+      </article>
+
+      <article class="col-3">
+        <h5>Professionnels</h5>
+        <ul>
+          <li><a href="#">Publicité</a></li>
+          <li><a href="#">Professionnel de l'immobilier</a></li>
+          <li><a href="#">Vos Recrutements</a></li>
+          <li><a href="#">Toutes nos solutions Pros</a></li>
+        </ul>
+      </article>
+
+      <article class="col-3">
+        <h5>Des Questions?</h5>
+        <ul>
+          <li><a href="#">Aide</a></li>
+          <li><a href="#">Nous Contacter</a></li>
+        </ul>
+        <h5>Vous êtes de l'étranger?</h5>
+        <select class="" name="">
+          <option value="france">France</option>
+          <option value="GB">GB</option>
+
+        </select>
+      </article>
+
+    </section>
+    <section class="row">
+      <article id="partenaire" class="col-12 hidden-md-down d-flex justify-content-center">
+        <p>Partenaires : <a href="#"> Younited Credit</a>-<a href="#"> Kudoz - Agriaffaires</a>-<a href="#">MachineryZone</a>-<a href="#">leDénicheur</a>-<a href="#"> Swipsi</a></p>
+      </article>
+      <article class="col-12 row align-items-center">
+        <p class="col-5">leboncoin 2006 - 2017</p>
+        <div class="offset-5 col-2">
+          <img src="img/facebook.png" alt="logo facebook" id="logo">
+          <img src="img/Logo-twitter-oiseau-bleu.png" alt="logo twitter" id="logo">
+        </div>
+      </article>
+
+    </section>
 
   </footer>
 

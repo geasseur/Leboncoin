@@ -16,3 +16,16 @@
   border-top:1px solid black;
   list-style-type: none;
 }
+
+#partenaire{
+  border-top: 1px solid white;
+}
+
+#logo{
+  width: 50px;
+}
+
+#imageApp{
+  width: 150px;
+  margin-top: 10px;
+}
