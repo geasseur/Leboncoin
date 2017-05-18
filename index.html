@@ -50,7 +50,7 @@
 
     <main class="container">
       <div class="row">
-        <section class="col-12 col-lg-4">
+        <section class="col-12 col-lg-3">
           <div class="row">
             <p class="text-muted col-10 offset-1">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
             <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce">Deposer une Annonce</button>
@@ -58,15 +58,19 @@
           </div>
         </section>
 
-        <section class="col-12 col-lg-5" id="carte">
-          <div class="width-50%">
-            <script src="cmap/france-map.js"></script>
-            <script>francefree();</script>
+        <section class="col-12 col-lg-7">
+          <div class="h-25 w-25" id="carte">
+            <img id="tailleMap" src="img/France-regions.jpg" alt="Region france" usemap="#Map"/>
+            <map name="Map" id="Map">
+                <area alt="" title="" href="#" shape="poly" id="NPC" coords="344,8,348,16,347,22,354,24,355,32,369,26,375,42,388,43,388,53,404,53,409,74,391,71,357,69,330,61,318,53,307,50,307,18" />
+                <area alt="" title="" href="#" shape="poly" id="Picardie" coords="382,143,369,135,366,126,345,129,330,124,311,124,310,101,313,84,296,69,307,52,333,62,352,68,367,71,389,71,413,74,406,95,406,109" />
+                [...]
+            </map>
           </div>
         </section>
 
 
-        <section class="col-12 col-lg-3">
+        <section class="col-12 col-lg-2">
           <select class="hidden-lg-up col-6 offset-3" name="Choisissez votre région">
             <option value="">Alsace</option>
             <option value="">Aquitaine</option>
@@ -96,7 +100,7 @@
             <option value="">Réunion</option>
         </select>
 
-          <ul class="hidden-md-downc">
+          <ul class="hidden-md-down">
             <li><a href=""><a href="">Alsace</a></li>
             <li><a href="">Aquitaine</a></li>
             <li><a href="">Auvergne</a></li>

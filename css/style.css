@@ -1,15 +1,9 @@
-#carte{
-  border: 1px solid #000;
-  width: 75%;
-  margin: auto;
-}
-
 #actualité{
   margin: auto;
 }
 
-#carte{
-  margin:0;
+#NPC:hover, #Picardie:hover{
+  background-color: red
 }
 
 #bloclien{
