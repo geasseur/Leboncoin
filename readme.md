@@ -2,4 +2,4 @@
 
 Site fait avec le framework bootstrap.
 
-La carte est bien cliquable.
+La carte est bien cliquable aux bon endroits, mais j'ai pas trouvé comment coloriser la carte quand on passe dessus.
