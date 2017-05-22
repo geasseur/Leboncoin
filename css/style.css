@@ -11,6 +11,10 @@
   list-style-type: none;
 }
 
+header, #boutonConnection{
+  background-color: rgb(236, 105, 9);
+}
+
 #partenaire{
   border-top: 1px solid white;
 }
@@ -22,4 +26,44 @@
 #imageApp{
   width: 150px;
   margin-top: 10px;
+}
+
+#boutonConnection{
+  width: 100px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#boutonConnection>img{
+  width: 20px;
+}
+
+#boutonRechercher{
+  background-color: white;
+  border: 1px solid blue;
+}
+
+#boutonRechercher:hover{
+  background-color: rgb(191, 202, 250);
+}
+
+#boutonannonce>img{
+  width: 20px;
+}
+
+#boutonannonce{
+  border-radius: 10px;
+  border: 0;
+}
+
+#boutonRechercher>img{
+  width: 20px;
+}
+
+#listDepartement{
+  padding: 0;
+}
+
+#listDepartement>li{
+  list-style-type: none;
 }

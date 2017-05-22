@@ -8,44 +8,47 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="icoBonCoin.png" />
     <title>Index</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-toggleable-md navbar-light bg-warning text-white">
-        <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand text-white offset-5 hidden-lg-up" href="#"><strong>Leboncoin</strong></a>
-        <a class="navbar-brand text-white hidden-md-down" href="#"><strong>Leboncoin</strong></a>
-
-        <div class="collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto align-items-center">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Accueil <span class="sr-only">(current)</span></a>
-            </a></li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Déposer une annonce</a>
-            </a></li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Offres</a>
-            </a></li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Demandes</a>
-            </a></li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Mes annonces</a>
-            </a></li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Boutique</a>
-            </a></li>
-          </ul>
-          <button class="bg-warning align-items-center" type="button" name="button">
-            <img src="" alt="">
-            <p>se connecter</p>
+      <section class="container">
+        <nav class="navbar navbar-toggleable-md navbar-light text-white">
+          <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-      </nav>
+          <a class="navbar-brand text-white offset-5 hidden-lg-up" href="#"><strong>Leboncoin</strong></a>
+          <a class="navbar-brand text-white hidden-md-down" href="#"><strong>Leboncoin</strong></a>
+
+          <div class="collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-3">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Déposer annonce</a>
+              </a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Offres</a>
+              </a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Demandes</a>
+              </a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Mes annonces</a>
+              </a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Boutique</a>
+              </a></li>
+            </ul>
+            <button id="boutonConnection" class="btn d-flex justify-content-end flex-wrap" type="button" name="button">
+              <img src="img/iconConnection.png" alt="Connection">
+              <p class="mt-1" >se connecter</p>
+            </button>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <main class="container">
@@ -53,8 +56,11 @@
         <section class="col-12 col-lg-3">
           <div class="row">
             <p class="text-muted col-10 offset-1">Trouvez la bonne affaire parmi <a href="#" class="text-warning">27 317 072 petites annonces</a> sur leboncoin.</p>
-            <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce">Deposer une Annonce</button>
-            <button class="col-10 offset-1 text-primary mt-4 pt-2 pb-2" id="boutonRechercher">Rechercher autour de soi</button>
+            <button class="col-10 offset-1 bg-primary text-white pt-2 pb-2" id="boutonannonce"><img src="img/iconDepoAnnonce.png" alt="déposer annonce">Deposer une Annonce</button>
+            <button class="btn col-10 offset-1 text-primary mt-4 pt-2 pb-2" id="boutonRechercher">
+              <img src="img/iconRecherche.png" alt="rechercher autour de soi">Rechercher autour de soi
+            </button>
+            <img class="col-12 hidden-md-down" src="img/actualitéLeboncoin.png" alt="">
           </div>
         </section>
 
@@ -100,7 +106,7 @@
             <option value="">Réunion</option>
         </select>
 
-          <ul class="hidden-md-down">
+          <ul class="hidden-md-down" id="listDepartement">
             <li><a href=""><a href="">Alsace</a></li>
             <li><a href="">Aquitaine</a></li>
             <li><a href="">Auvergne</a></li>
@@ -129,13 +135,12 @@
             <li><a href="">Réunion</a></li>
           </ul>
         </section>
+        <article class="row col-12 hidden-lg-up" id="actualité">
+          <h5 class="col-12 hidden-lg-up">l'actualité Leboncoin</h5>
+          <img class="col-12" src="img/actualitéLeboncoin.png" alt="">
+        </article>
+        <p class="col-12">Sur le site <a href="#">leboncoin.fr</a>, passez des <a href="#">annonces gratuites</a> et sans commission. Vous pouvez <a href="#">consulter des petites annonces</a> de <a href="#">particuliers</a> et de <a href="#">professionnels</a> partout en France, que vous cherchiez des <a href="#">annonces immobilières</a>, des <a href="#">voitures d'occasion</a>, <a href="#">des offres d'emploi</a>, <a href="">des meubles</a>, <a href="">du matériel électronique</a> ou tout autre type de <a href="">produits d'occasion</a>.</p>
       </div>
-
-
-    <article class="row col-12 hidden-lg-up" id="actualité">
-      <h5 class="col-12 hidden-lg-up">l'actualité Leboncoin</h5>
-      <img class="col-12" src="img/actualitéLeboncoin.png" alt="">
-    </article>
 
     <section class="container hidden-md-down" id="bloclien">
       <section class="row">
