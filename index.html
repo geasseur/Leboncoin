@@ -18,11 +18,11 @@
           <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand text-white offset-5 hidden-lg-up" href="#"><strong>Leboncoin</strong></a>
-          <a class="navbar-brand text-white hidden-md-down" href="#"><strong>Leboncoin</strong></a>
+          <a id="leboncoinGrand" class="navbar-brand text-white offset-5 hidden-lg-up" href="#"><strong>Leboncoin</strong></a>
+          <a id="leboncoinPetit" class="navbar-brand text-white hidden-md-down" href="#"><strong>Leboncoin</strong></a>
 
-          <div class="collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mt-2">
+          <div class="row ml-0 collapse navbar-collapse offset-1 text-white" id="navbarSupportedContent">
+            <ul class="col-lg-9 col-xl-9 navbar-nav mr-auto mt-2">
               <li class="nav-item active">
                 <a class="nav-link text-white" href="#">Accueil <span class="sr-only">(current)</span></a>
               </li>
@@ -42,13 +42,15 @@
                 <a class="nav-link text-white" href="#">Boutique</a>
               </li>
             </ul>
-            <button id="boutonConnection" class="btn d-flex justify-content-end flex-wrap" type="button" name="button">se connecter</button>
+            <button id="boutonConnection" class="p-0 col-xl-2 col-lg-2 btn d-flex justify-content-end align-items-center" type="button" name="button">
+              <img src="img/iconConnection.png" class="offset-xl-1" alt="se connecter">Se connecter
+            </button>
           </div>
         </nav>
       </section>
     </header>
 
-    <main class="container">
+    <main class="container mt-4">
       <div class="row">
         <section class="col-12 col-lg-3">
           <div class="row">
@@ -136,7 +138,7 @@
           <h5 class="col-12 hidden-lg-up">l'actualité Leboncoin</h5>
           <img class="col-12" src="img/actualitéLeboncoin.png" alt="">
         </article>
-        <p class="col-12">Sur le site <a href="#">leboncoin.fr</a>, passez des <a href="#">annonces gratuites</a> et sans commission. Vous pouvez <a href="#">consulter des petites annonces</a> de <a href="#">particuliers</a> et de <a href="#">professionnels</a> partout en France, que vous cherchiez des <a href="#">annonces immobilières</a>, des <a href="#">voitures d'occasion</a>, <a href="#">des offres d'emploi</a>, <a href="">des meubles</a>, <a href="">du matériel électronique</a> ou tout autre type de <a href="">produits d'occasion</a>.</p>
+        <p id="textlien" class="col-12">Sur le site <a href="#">leboncoin.fr</a>, passez des <a href="#">annonces gratuites</a> et sans commission. Vous pouvez <a href="#">consulter des petites annonces</a> de <a href="#">particuliers</a> et de <a href="#">professionnels</a> partout en France, que vous cherchiez des <a href="#">annonces immobilières</a>, des <a href="#">voitures d'occasion</a>, <a href="#">des offres d'emploi</a>, <a href="">des meubles</a>, <a href="">du matériel électronique</a> ou tout autre type de <a href="">produits d'occasion</a>.</p>
       </div>
 
     <section class="container hidden-md-down" id="bloclien">
@@ -255,7 +257,7 @@
     </section>
   </main>
 
-  <footer class="container-fluid bg-inverse text-white">
+  <footer class="container text-white">
     <section class="row hidden-md-down">
       <article class="col-3">
         <h5>À propos du Boncoin</h5>
@@ -298,23 +300,27 @@
           <li><a href="#">Nous Contacter</a></li>
         </ul>
         <h5>Vous êtes de l'étranger?</h5>
-        <select class="form-control" name="selectpays">
-          <option value="france">France</option>
-          <option value="GB">GB</option>
-
-        </select>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="img/drapeauFr.png" id="drapeaufr" alt="">France
+          </button>
+        </div>
       </article>
 
     </section>
     <section class="row">
       <article id="partenaire" class="col-12 hidden-md-down d-flex justify-content-center">
-        <p>Partenaires : <a href="#"> Younited Credit</a>-<a href="#"> Kudoz - Agriaffaires</a>-<a href="#">MachineryZone</a>-<a href="#">leDénicheur</a>-<a href="#"> Swipsi</a></p>
+        <p id="partenaire">Partenaires : <a href="#"> Younited Credit</a>-<a href="#"> Kudoz - Agriaffaires</a>-<a href="#">MachineryZone</a>-<a href="#">leDénicheur</a>-<a href="#"> Swipsi</a></p>
       </article>
       <article class="col-12 row align-items-center">
         <p class="col-5">leboncoin 2006 - 2017</p>
         <div class="offset-5 col-2">
-          <img src="img/facebook.png" alt="logo facebook" id="logofacebook">
-          <img src="img/Logo-twitter-oiseau-bleu.png" alt="logotwitter" id="logotwitter">
+          <a href="#">
+            <img src="img/facebook.png" alt="logo facebook" id="logofacebook">
+          </a>
+          <a href="#">
+            <img src="img/Logo-twitter-oiseau-bleu.png" alt="logotwitter" id="logotwitter">
+          </a>
         </div>
       </article>
 

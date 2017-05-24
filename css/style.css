@@ -2,12 +2,16 @@
   margin: auto;
 }
 
+#leboncoinGrand, #leboncoinPetit{
+  font-size: 1.2em;
+}
+
 #NPC:hover, #Picardie:hover{
   background-color: red
 }
 
-#bloclien{
-  border-top: 1px solid black;
+#bloclien>.row>.col-3>ul, footer>.row>.col-3>ul{
+  padding:0;
 }
 
 #bloclien>.row>.col-3>ul>li{
@@ -16,6 +20,18 @@
 
 header, #boutonConnection{
   background-color: rgb(236, 105, 9);
+}
+
+h5{
+  border-bottom: 1px solid black;
+}
+
+footer h5{
+  border-bottom: 1px solid white;
+}
+
+#textlien{
+  text-align: center;
 }
 
 #partenaire{
@@ -44,6 +60,7 @@ header, #boutonConnection{
 #boutonRechercher{
   background-color: white;
   border: 1px solid blue;
+  border-radius: 10px;
 }
 
 #boutonRechercher:hover{
@@ -77,4 +94,16 @@ header, #boutonConnection{
 
 footer>.row>.col-3>ul>li{
   list-style-type: none;
+}
+
+footer{
+  background-color: rgb(55, 55, 55);
+}
+
+#drapeaufr{
+  width: 10%;
+}
+
+#partenaire{
+  color:white;
 }
